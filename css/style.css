@@ -1,0 +1,47 @@
+/*
+    Name: David EXAMEN STUDI
+    Author: David FARIAS
+    Description: Site en HTML/CSS/Bootstrap
+    Version: 1.0
+
+    Create Date: 10/12/2020
+    */
+
+/**** CSS Index
+    -----------------------------------
+    01. Default Style
+    ----------------------------------
+    ****/
+
+/**** IMPORTS LISTS ****/
+@import url("animate.css");
+
+/**** Default Style ****/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.7em;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+  line-height: 1.6em;
+  font-family: "Roboto", sans-serif;
+}
