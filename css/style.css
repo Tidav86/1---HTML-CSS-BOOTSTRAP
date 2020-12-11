@@ -10,6 +10,14 @@
 /**** CSS Index
     -----------------------------------
     01. Default Style
+    02. Config du Loader
+    03. Main Header style
+    04. Main Menu Style
+    05. List Style
+    06. Main Slider Section
+    07. Owl style
+    08. Scroll To Top style
+    09. Main Container
     ----------------------------------
     ****/
 
@@ -44,4 +52,69 @@ h6 {
   background: none;
   line-height: 1.6em;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  transition: linear all 300ms;
+  -webkit-transition: linear all 300ms;
+  -moz-transition: linear all 300ms;
+  -ms-transition: linear all 300ms;
+  -o-transition: linear all 300ms;
+}
+
+a:hover {
+  color: #6734c2;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/**** Config du Loader ****/
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(/images/loader/loader.svg);
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
