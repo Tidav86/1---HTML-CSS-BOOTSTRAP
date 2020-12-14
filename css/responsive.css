@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  .header-top .header-info-list {
+    margin: 0;
+  }
+  .header-top .header-info-list li {
+    font-size: 0.65rem;
+    padding: 0;
+    line-height: 1rem;
+  }
+  .bandeau {
+    padding: 10px 0px;
+    border-bottom: 3px solid #ff7f00;
+  }
+  .logo-box .logo img {
+    height: 5rem;
+  }
+  .nav-pills .nav-link {
+    display: none;
+  }
+  .nav-pills .nav-link-min {
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .navbar {
+    flex-wrap: nowrap;
+  }
+}

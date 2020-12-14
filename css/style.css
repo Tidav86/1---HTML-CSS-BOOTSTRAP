@@ -12,12 +12,9 @@
     01. Default Style
     02. Config du Loader
     03. Main Header style
-    04. Main Menu Style
-    05. List Style
-    06. Main Slider Section
-    07. Owl style
-    08. Scroll To Top style
-    09. Main Container
+    04. Main Menu style
+    05. ScrollBar Config
+    06. Footer style
     ----------------------------------
     ****/
 
@@ -32,12 +29,15 @@
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #555555;
+  color: #9b9b9b;
   line-height: 1.7em;
-  font-weight: 400;
 }
 
 h1,
@@ -46,34 +46,39 @@ h3,
 h4,
 h5,
 h6 {
-  position: relative;
   font-weight: normal;
-  margin: 0px;
-  background: none;
-  line-height: 1.6em;
-  font-family: "Roboto", sans-serif;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #fff;
-  transition: linear all 300ms;
-  -webkit-transition: linear all 300ms;
-  -moz-transition: linear all 300ms;
-  -ms-transition: linear all 300ms;
-  -o-transition: linear all 300ms;
+  color: #9b9b9b;
 }
 
 a:hover {
-  color: #6734c2;
+  color: #ff7f00;
 }
 
 ul,
 li {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+}
+
+section {
+  padding: 15px 0;
+  height: 200px;
+}
+
+.orange-divider {
+  width: 150px;
+  height: 2px;
+  background: #ff7f00;
+  margin: 0 auto;
+}
+
+aside {
+  padding: 5px 0;
+  height: 40px;
 }
 
 /**** Config du Loader ****/
@@ -83,7 +88,6 @@ li {
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 999999;
   background-color: #ffffff;
   background-position: center center;
   background-repeat: no-repeat;
@@ -99,22 +103,143 @@ li {
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
+    z-index: 99999;
   }
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    z-index: 99999;
   }
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
+}
+
+/**** Main Header style ****/
+
+.header-top {
+  position: relative;
+  text-align: center;
+  max-height: 150px;
+  padding: 5px 0px;
+  background-color: #fff;
+}
+
+.header-top .header-info-list {
+  color: #9b9b9b;
+}
+
+.header-top .header-info-list li {
+  font-weight: 400;
+  padding: 5px 0;
+  font-size: 0.85rem;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.header-top .header-info-list .icon {
+  padding-right: 10px;
+}
+
+.bandeau {
+  padding: 0px;
+  border-bottom: 5px solid #ff7f00;
+}
+
+.logo-box {
+  text-align: center;
+}
+
+.logo-box .logo img {
+  height: 7rem;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/**** Main Menu style ****/
+.navbar {
+  background-color: #ff7f00;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+  border-style: none;
+  text-align: center;
+}
+
+.nav-pills .nav-link {
+  color: #fff !important;
+  text-align: center;
+}
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  color: #ff7f00 !important;
+  background-color: #fff !important;
+}
+
+.nav-pills .nav-link-min {
+  display: none;
+  margin: 0 30px;
+}
+
+/**** ScrollBar Config ****/
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #ff7f00;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ffb888;
+}
+
+/**** Footer Style ****/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #ff7f00;
+  padding: 0px;
+}
+
+footer .fa-chevron-circle-up {
+  font-size: 25px;
+  margin: 3px 0px;
+  color: #fff;
+  height: 30px;
+}
+footer .fa-chevron-circle-up:hover {
+  font-size: 28px;
+}
+
+footer h5 {
+  color: #fff;
+  font-size: 0.75rem;
 }
