@@ -1,4 +1,27 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 410px) {
+  .slider {
+    width: 300px;
+  }
+  .google-maps {
+    width: 300px;
+    height: 280px;
+  }
+  .size-box {
+    width: 250px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 576px) {
+  .slider {
+    width: 400px;
+  }
+  .google-maps {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header-top .header-info-list {
     margin: 0;
   }
@@ -38,6 +61,12 @@
 }
 
 @media screen and (max-width: 991px) {
+  section {
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .nav {
     display: flex;
     flex-flow: row wrap;
@@ -45,5 +74,38 @@
   }
   .navbar {
     flex-wrap: nowrap;
+  }
+  .slider {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1340px) {
+  .slider {
+    width: 400px;
+    height: 280px;
+    transition: all 0.3s ease-out;
+  }
+  .introducing .heading h1 {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+  }
+
+  .intro-box {
+    margin: 0 20px;
+  }
+  .intro-box p {
+    font-size: 0.7rem;
+    transition: all 0.3s ease-out;
+  }
+  .size-box {
+    width: 350px;
+    height: 260px;
+    transition: all 0.3s ease-out;
+  }
+  .google-maps {
+    width: 400px;
+    height: 280px;
+    transition: all 0.3s ease-out;
   }
 }

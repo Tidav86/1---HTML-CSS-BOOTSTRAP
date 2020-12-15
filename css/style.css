@@ -15,7 +15,7 @@
     04. Main Menu style
     05. ScrollBar Config
     06. Footer style
-    07. Slider style
+    07. First Row style
     08. Actions style
     09. Formulaire style
     10. Social Bar
@@ -35,11 +35,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
   color: #9b9b9b;
   line-height: 1.7em;
 }
@@ -73,7 +73,12 @@ li {
 
 section {
   padding: 15px 0;
-  height: 150px;
+  max-height: 500px;
+}
+
+.column {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .orange-divider {
@@ -251,9 +256,75 @@ footer h5 {
   font-size: 1rem;
 }
 
-/**** 07. Slider style ****/
+/**** 07. First Row style ****/
 .slider {
-  background: red;
+  width: 500px;
+  height: 330px;
+  overflow: hidden;
+  margin: 0px auto 10px auto;
+}
+
+.slides {
+  width: calc(500px * 3);
+  animation: switch 15s infinite;
+}
+
+.slide {
+  float: left;
+}
+
+@keyframes switch {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-500px);
+  }
+  43% {
+    transform: translateX(-500px);
+  }
+  66% {
+    transform: translateX(-1000px);
+  }
+  76% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.introducing {
+}
+
+.introducing .heading h1 {
+  margin: 0 0 15px 0;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.intro-box {
+  margin: 0 50px;
+}
+
+.intro-box p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.google-maps {
+  width: 500px;
+  height: 330px;
+  margin: 0px auto;
+  text-align: center;
+}
+.size-box {
+  width: 400px;
+  height: 300px;
 }
 
 /**** 08. Actions style ****/
