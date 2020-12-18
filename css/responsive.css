@@ -11,6 +11,19 @@
     height: 200px;
     transition: all 0.3s ease-out;
   }
+  .numbers .progress .progress-title {
+    font-size: 0.7rem;
+  }
+  .numbers .progress .progress-title:after {
+    border-left: 7px solid #d1d1d1;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    top: 14px;
+    right: -7px;
+  }
+  .numbers .progress .progress-value {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 410px) and (max-width: 576px) {
