@@ -44,7 +44,7 @@
   </head>
 
   <body>
-    <div class="loader fadeOut"></div>
+    <!-- <div class="loader fadeOut"></div> -->
 
     <header>
       <!-- Navigation Bar -->
@@ -432,7 +432,117 @@
             </div>
           </div>
         </section>
-        <section id="form-contact" class="contact"></section>
+        <section id="form-contact" class="contact">
+          <div class="section-heading">
+            <h3>Forumlaire de contact</h3>
+          </div>
+          <div class="white-divider"></div>
+          <form class="form-box">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputFirstName"
+                  placeholder="Nom"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLastName"
+                  placeholder="Prénom"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="Téléphone"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Votre message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-row justify-content-center">
+              <div class="form-group col-sm-6 interest">
+                <h5>Vous souhaitez devenir :</h5>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="volunteerCheckbox"
+                    value="benevole"
+                  />
+                  <label class="form-check-label" for="volunteerCheckbox"
+                    >Bénévole</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="memberCheckbox"
+                    value="adherent"
+                  />
+                  <label class="form-check-label" for="memberCheckbox"
+                    >Adhérent</label
+                  >
+                </div>
+              </div>
+              <div class="form-group col-sm-6 interest">
+                <h5>Vous souhaitez adopter :</h5>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="animalRadio"
+                    id="catRadio"
+                    value="chat"
+                  />
+                  <label class="form-check-label" for="catRadio">Un chat</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="animalRadio"
+                    id="dogRadio"
+                    value="chien"
+                  />
+                  <label class="form-check-label" for="dogRadio"
+                    >un chien</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="signup">
+              <button type="submit" class="btn btn-warning">
+                Envoyer le formulaire
+              </button>
+            </div>
+          </form>
+        </section>
       </article>
 
       <aside class="social-network">

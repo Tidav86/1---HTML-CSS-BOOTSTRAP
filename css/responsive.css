@@ -24,6 +24,13 @@
   .numbers .progress .progress-value {
     font-size: 0.7rem;
   }
+  .form-box h5 {
+    font-size: 1rem;
+  }
+
+  .form-box label {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 410px) and (max-width: 576px) {
@@ -77,6 +84,10 @@
 @media screen and (max-width: 991px) {
   section {
     padding: 5px 0;
+  }
+  .contact .form-box {
+    width: 75%;
+    transition: all 0.3s ease-out;
   }
 }
 
