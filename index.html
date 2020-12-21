@@ -24,7 +24,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- ANIMATE ON SCROLL SCRIPT -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--FONT AWESOME-->
     <link
@@ -231,7 +233,11 @@
           </div>
           <div class="white-divider"></div>
           <div class="row align-items-center justify-content-center clearfix">
-            <div class="col-lg-6">
+            <div
+              class="col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div class="progress">
                 <h3 class="progress-title">CHATS</h3>
                 <div class="progress-bar">
@@ -245,7 +251,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
               <div class="progress">
                 <h3 class="progress-title">CHIENS</h3>
                 <div class="progress-bar">
@@ -278,11 +284,12 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
               >
                 <h5 class="card-header">YAMS</h5>
                 <img
                   src="images/content/chien1.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -298,11 +305,13 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
+                data-aos-delay="200"
               >
                 <h5 class="card-header">SWEET</h5>
                 <img
                   src="images/content/chien2.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -317,11 +326,13 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
+                data-aos-delay="400"
               >
                 <h5 class="card-header">ATHENA</h5>
                 <img
                   src="images/content/chien3.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -336,11 +347,13 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
+                data-aos-delay="600"
               >
                 <h5 class="card-header">LENNY</h5>
                 <img
                   src="images/content/chien4.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -357,11 +370,12 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
               >
                 <h5 class="card-header">BABA</h5>
                 <img
                   src="images/content/chat1.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -377,11 +391,13 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
+                data-aos-delay="200"
               >
                 <h5 class="card-header">ROCCO</h5>
                 <img
                   src="images/content/chat2.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -396,11 +412,13 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
+                data-aos-delay="400"
               >
                 <h5 class="card-header">HULOTTE</h5>
                 <img
                   src="images/content/chat3.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -415,11 +433,13 @@
               <div
                 class="card text-center mx-auto text-white bg-warning"
                 style="width: 18rem"
+                data-aos="zoom-in-up"
+                data-aos-delay="600"
               >
                 <h5 class="card-header">NANOU</h5>
                 <img
                   src="images/content/chat4.jpg"
-                  class="card-img-top"
+                  class="card-img-top img-thumbnail"
                   alt="..."
                 />
                 <div class="card-body">
@@ -584,5 +604,10 @@
     </footer>
 
     <!-- SCRIPTS LOADING -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
