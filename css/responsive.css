@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 992px) {
   section {
-    padding: 5px 0;
+    /* padding: 5px 0; */
   }
   .contact .form-box {
     width: 75%;
@@ -142,10 +142,10 @@
   }
 
   .intro-box {
-    margin: 0 20px;
+    line-height: 1.3rem;
   }
   .intro-box p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 0.3s ease-out;
   }
   .size-box {
