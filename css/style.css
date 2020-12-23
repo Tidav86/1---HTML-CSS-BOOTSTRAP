@@ -523,7 +523,7 @@ footer h5 {
 /**** 12. Event Style ****/
 
 .event {
-  margin-top: 20px auto;
+  margin-top: 20px;
 }
 .event .heading {
   align-items: center;
@@ -546,6 +546,7 @@ footer h5 {
   margin-left: 0;
   margin-right: 0;
 }
+
 .table-event .card img {
   padding: 10px;
   border-radius: 20px;
@@ -556,18 +557,19 @@ footer h5 {
 }
 
 .table-event .card-body {
-  align-items: center;
+  padding: 5px 10px;
+  text-align: center;
 }
 
 .table-event .card-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
 
 .table-event .card-text {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-shadow: 1px 1px 2px #000;
 }
 
