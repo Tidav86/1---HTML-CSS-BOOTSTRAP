@@ -537,53 +537,53 @@ footer h5 {
   text-shadow: 2px 2px 2px #d1d1d1;
 }
 
-.table-event {
+.container-fluid {
   text-align: center;
 }
 
-.table-event .card-deck {
+.container-fluid .card-deck {
   padding: 15px 0;
   margin-left: 0;
   margin-right: 0;
 }
 
-.table-event .card img {
-  padding: 10px;
-  border-radius: 20px;
+.container-fluid .card img {
+  padding: 20px;
+  border-radius: 30px;
 }
 
-.table-event .card {
+.container-fluid .card {
   border: 2px solid #ff7f00;
 }
 
-.table-event .card-body {
+.container-fluid .card-body {
   padding: 5px 10px;
   text-align: center;
 }
 
-.table-event .card-title {
+.container-fluid .card-title {
   font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
 }
 
-.table-event .card-text {
+.container-fluid .card-text {
   font-size: 1rem;
   line-height: 1.5rem;
   text-shadow: 1px 1px 2px #000;
 }
 
-.table-event .card-footer {
+.container-fluid .card-footer {
   background: #d1d1d1;
 }
 
-.table-event .card-footer .text-muted {
+.container-fluid .card-footer .text-muted {
   color: #ff7f00 !important;
   font-weight: bold;
   font-style: italic;
   font-size: 1rem;
 }
-.table-event .card-footer .btn-light:hover {
+.container-fluid .card-footer .btn-light:hover {
   font-weight: bold;
   color: #fff;
   background: #ff7f00;
