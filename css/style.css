@@ -254,7 +254,7 @@ footer {
   position: absolute;
   width: 100%;
   background: #fff;
-  padding: 0px;
+  padding-top: 10px;
 }
 
 footer .fa-chevron-circle-up {
@@ -537,23 +537,13 @@ footer h5 {
   text-shadow: 2px 2px 2px #d1d1d1;
 }
 
-.container-fluid {
-  text-align: center;
-}
-
-.container-fluid .card-deck {
-  padding: 15px 0;
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .container-fluid .card img {
   padding: 20px;
   border-radius: 30px;
 }
 
 .container-fluid .card {
-  border: 2px solid #ff7f00;
+  border: 4px solid #ff7f00;
 }
 
 .container-fluid .card-body {
@@ -564,7 +554,7 @@ footer h5 {
 .container-fluid .card-title {
   font-size: 2rem;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .container-fluid .card-text {
