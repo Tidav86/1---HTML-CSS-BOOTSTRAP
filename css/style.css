@@ -208,21 +208,29 @@ aside {
   text-align: center;
   margin: 0 30px;
   color: #fff !important;
+  transition: all 0.3s ease-out;
 }
 .nav-pills .nav-link.active,
 .nav-pills .nav-link:hover {
   color: #ff7f00 !important;
   background-color: #fff !important;
+  transition: all 0.3s ease-out;
 }
 
 .nav-pills .nav-link-min.active,
 .nav-pills .nav-link-min:hover {
-  color: #fbff07 !important;
+  color: #ff7f00 !important;
+  padding: 5px 20px;
+  background: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .nav-pills .nav-link-min {
   display: none;
   margin: 0 30px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
 }
 
 /**** ScrollBar Config ****/

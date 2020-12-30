@@ -1,5 +1,27 @@
 /* Extra small devices (410px and down) */
 @media screen and (max-width: 410px) {
+  .introducing {
+    line-height: 1rem;
+  }
+
+  .introducing h1 {
+    font-size: 1.2rem;
+  }
+
+  .introducing p {
+    font-size: 0.7rem;
+  }
+
+  .google-maps {
+    width: 100%;
+    height: 230px;
+  }
+  .size-box {
+    width: 100%;
+    height: 200px;
+    transition: all 0.3s ease-out;
+  }
+
   .numbers .progress .progress-title {
     font-size: 0.5rem;
   }
